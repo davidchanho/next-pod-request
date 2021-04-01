@@ -3,31 +3,92 @@
 .container {
   min-height: 100vh;
   background-color: styles.$dark;
-  background-image: url("/desktop/image-host.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% 137%;
 }
 
 .main {
-  height: 640px;
-  width: 1275px;
   position: relative;
 }
 
 .section {
-  width: 723px;
-  height: 509px;
-  padding-top: 8px;
-  padding-right: 78px;
-  margin-left: 120px;
   background-color: styles.$dark;
   position: absolute;
-  bottom: -13%;
-  left: 45px;
 }
 
 .pattern {
   position: absolute;
-  right: 0;
-  bottom: -9%;
+}
+
+@media (max-width: styles.$desktopBP) {
+  .container {
+    background-position: 100% 137%;
+    background-image: url("/desktop/image-host.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main {
+    height: 640px;
+    width: 1275px;
+  }
+
+  .section {
+    width: 723px;
+    height: 509px;
+    padding-top: 8px;
+    padding-right: 78px;
+    margin-left: 120px;
+    bottom: -13%;
+    left: 45px;
+  }
+
+  .pattern {
+    right: 0;
+    bottom: -9%;
+  }
+}
+
+@media (max-width: styles.$tabletBP) {
+  .container {
+    background-position: 100% 0;
+    background-size: 491px 767px;
+    background-image: url("/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+  }
+  .main {
+    width: 635px;
+    height: 509px;
+  }
+  .section {
+    width: 80%;
+    margin-left: 0;
+  }
+  .pattern {
+    position: relative;
+    bottom: -30px;
+  }
+}
+
+@media (max-width: styles.$mobileBP) {
+  .container {
+    background-position: 0;
+    background-size: cover;
+    background-image: url("/mobile/image-host.jpg");
+    background-repeat: no-repeat;
+  }
+  .main {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+  }
+  .section {
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .pattern {
+    display: none;
+  }
 }

@@ -1,6 +1,26 @@
+@use '../../styles';
+
 .logo {
   position: relative;
-  top: 102px;
-  left: 165px;
-  z-index: 1000;
+}
+
+@media (max-width: styles.$desktopBP) {
+  .logo {
+    top: 102px;
+    left: 165px;
+  }
+}
+
+@media (max-width: styles.$tabletBP) {
+  .logo {
+    top: 35px;
+    left: 50px;
+  }
+}
+
+@media (max-width: styles.$mobileBP) {
+  .logo {
+    top: 62px;
+    left: 120px;
+  }
 }

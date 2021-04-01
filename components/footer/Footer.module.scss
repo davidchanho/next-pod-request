@@ -1,8 +1,31 @@
+@use '../../styles';
+
 .footer {
-  margin-top: 42px;
   display: flex;
   align-items: center;
-  img {
-    margin-right: 40px;
+}
+
+@media (max-width: styles.$desktopBP) {
+  .footer {
+    margin-top: 42px;
+    img {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (max-width: styles.$tabletBP) {
+}
+
+@media (max-width: styles.$mobileBP) {
+  .footer {
+    img {
+      width: 56px;
+      height: 17px;
+      margin: 0 auto;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

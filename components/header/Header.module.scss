@@ -1,26 +1,54 @@
 @use '../../styles';
 
-.header {
-}
-
 .title {
   font-size: 52px;
   font-weight: 300;
   text-transform: capitalize;
   color: styles.$primary;
-  width: 665px;
-  height: 124px;
 }
 .accent {
   font-size: 52px;
   font-weight: 300;
   color: styles.$white;
-  margin-bottom: 37px;
 }
 .subtitle {
   font-size: 18px;
   color: styles.$lightGrey;
-  width: 445px;
-  height: 85px;
-  margin-bottom: 40px;
+}
+
+@media (max-width: styles.$desktopBP) {
+  .title {
+    width: 665px;
+    height: 124px;
+  }
+  .accent {
+    margin-bottom: 37px;
+  }
+  .subtitle {
+    width: 445px;
+    height: 85px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: styles.$tabletBP) {
+  .header {
+  }
+  .title {
+  }
+  .subtitle {
+  }
+}
+
+@media (max-width: styles.$mobileBP) {
+  .header {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .title {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
 }
