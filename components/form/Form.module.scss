@@ -1,0 +1,45 @@
+@use '../../styles';
+
+
+.form {
+  background-color: styles.$accent;
+  font-size: 14px;
+  width: 427px;
+  height: 55px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.input {
+  color: styles.$white;
+  background-color: styles.$accent;
+  border: none;
+  border-radius: 28px;
+  padding: 20px 0 20px 32px;
+  outline: none;
+  width: 100%;
+  height: 100%; 
+}
+.button {
+  background-color: styles.$primary;
+  color: styles.$dark;
+  font-weight: bold;
+  width: 162px;
+  height: 46px;
+  border: none;
+  border-radius: 28px;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+    background-color: styles.$primaryHover;
+  }
+}
+.error {
+  color: styles.$warning;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 32px;
+  margin-top: 11px;
+}

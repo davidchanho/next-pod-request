@@ -1,0 +1,26 @@
+@use '../../styles';
+
+.header {
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: styles.$primary;
+  width: 665px;
+  height: 124px;
+}
+.accent {
+  font-size: 52px;
+  font-weight: 300;
+  color: styles.$white;
+  margin-bottom: 37px;
+}
+.subtitle {
+  font-size: 18px;
+  color: styles.$lightGrey;
+  width: 445px;
+  height: 85px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,33 @@
+@use '../styles';
+
+.container {
+  min-height: 100vh;
+  background-color: styles.$dark;
+  background-image: url("/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 137%;
+}
+
+.main {
+  height: 640px;
+  width: 1275px;
+  position: relative;
+}
+
+.section {
+  width: 723px;
+  height: 509px;
+  padding-top: 8px;
+  padding-right: 78px;
+  margin-left: 120px;
+  background-color: styles.$dark;
+  position: absolute;
+  bottom: -13%;
+  left: 45px;
+}
+
+.pattern {
+  position: absolute;
+  right: 0;
+  bottom: -9%;
+}

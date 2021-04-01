@@ -1,0 +1,19 @@
+$fontFamily: "Chivo";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $fontFamily;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
